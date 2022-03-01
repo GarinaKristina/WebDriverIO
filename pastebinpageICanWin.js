@@ -1,4 +1,4 @@
-const SearchPage = require('../pageobjects/searchPage');
+const SearchPage = require('./searchPage');
 
 describe('PastebinPage', () => {
   it('should have title', () => {
