@@ -22,7 +22,6 @@ class SearchPage extends OpenPage {
   get createNewPaste() {
     return $("button[type='submit']");
   }
-  //button[normalize-space()='AGREE']
   get buttonAgreefirst() {
     return $('//button[normalize-space()="AGREE"]');
   }
