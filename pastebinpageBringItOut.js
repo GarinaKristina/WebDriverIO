@@ -2,15 +2,12 @@ const SearchPage = require('./searchPage');
 
 describe('PastebinPage', () => {
   it('should have title', async () => {
-    await SearchPage.open();
-    // await expect(browser).toHaveTitle('Pastebin.com - #1 paste tool since 2002!');
+    await SearchPage.open();  
   });
-
   it('should add the text in new paste area', async () => {
     await SearchPage.textNewPaste.addValue(
       'git config --global user.name  "New Sheriff in Town"git reset $(git commit-tree HEAD^{tree} -m "Legacy code")git push origin master --force'
     );
-    // await expect(SearchPage.textNewPaste).toHaveTextContaining('New Sheriff in Town');
   });
   it('should click on button Agree ', async () => {
     await SearchPage.buttonAgreefirst.click();
@@ -27,15 +24,13 @@ describe('PastebinPage', () => {
   });
   it('should add the value "how to gain dominance among developers"', async () => {
     await SearchPage.pasteNameTitle.addValue('how to gain dominance among developers');
-    // await expect(SearchPage.pasteNameTitle).toHaveText('how to gain dominance among developers');
-  });
+   });
   it('should create new paste', async () => {
     await SearchPage.createNewPaste.click();
   });
   it('should click on button AGREE', async () => {
     await SearchPage.buttonAgreeSecond.click();
   });
-
   it('should check new paste for the existence ', async () => {
     await expect(browser).toHaveTitleContaining('how to gain dominance among developers');
   });
