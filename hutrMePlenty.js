@@ -1,4 +1,4 @@
-const GoogleCalculatorPage = require('../../pageobjects/google/GoogleCalculatorPage');
+const GoogleCalculatorPage = require('./GoogleCalculatorPage');
 
 const request = 'Google Cloud Platform Pricing Calculator';
 const enter = '\uE007';
