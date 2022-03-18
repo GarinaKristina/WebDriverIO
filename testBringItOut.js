@@ -1,4 +1,4 @@
-const PastebinPage = require('../../pageobjects/pastebinPage/PastebinPage');
+const PastebinPage = require('./PastebinPage');
 
 const text =
   'git config --global user.name  "New Sheriff in Town"git reset $(git commit-tree HEAD^{tree} -m "Legacy code")git push origin master --force';
