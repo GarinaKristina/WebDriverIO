@@ -2,7 +2,7 @@ const GoogleCalculatorPage = require('./GoogleCalculatorPage');
 
 const request = 'Google Cloud Platform Pricing Calculator';
 const enter = '\uE007';
-const parametrNumberOfInstaces = '4';
+const parameterNumberOfInstaces = '4';
 const TIMEOUT = { timeout: 50000 };
 const height = 1080;
 const width = 1920;
@@ -29,7 +29,7 @@ describe('Build a calculator with special parameters', () => {
   });
 
   it('should add value in "Number of instances"- 4', async () => {
-    await GoogleCalculatorPage.numberOfInstances4.addValue(parametrNumberOfInstaces);
+    await GoogleCalculatorPage.numberOfInstances4.addValue(parameterNumberOfInstaces);
   });
 
   it('should click on "Operation system"', async () => {
