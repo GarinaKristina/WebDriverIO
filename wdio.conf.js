@@ -23,8 +23,11 @@ exports.config = {
   specs: ['./test/specs/**/*.js'],
   // Patterns to exclude.
   exclude: [
-    // 'path/to/excluded/files'
+    './test/specs/**/pastebinpageBringItOut.js',
+    './test/specs/**/pastebinpageICanWin.js',
+    './test/specs/**/hardkore.js',
   ],
+  //include: ['./test/pageobjects/specs/google/*.js'],
   //
   // ============
   // Capabilities
