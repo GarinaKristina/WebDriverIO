@@ -1,4 +1,4 @@
-const PastebinPage = require('../../pageobjects/pastebinPage/PastebinPage');
+const PastebinPage = require('./PastebinPage');
 
 describe('PastebinPage', () => {
   it('should have title', async () => {
