@@ -168,6 +168,7 @@ class GoogleCalculatorPage extends BasePage {
   }
 
   async getTotalCost() {
+    await browser.switchToParentFrame();
     await browser.switchToFrame(await this.iframe);
     return await this.total.getText();
   }

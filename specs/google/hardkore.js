@@ -174,12 +174,7 @@ describe('Open page https://cloud.google.com/', () => {
     await expect(GoogleCalculatorPage.message).toHaveTextContaining('Google Cloud Price Estimate');
   });
   it('should check "Total Estimated Monthly Cost" equal USD 4,026.13', async () => {
-    await GoogleCalculatorPage.getTotalCost;
-    const elem = await $('//*[normalize-space()="USD 4,026.13"]');
-    //await expect(elem).toExist();
-    //await expect(elem).toBeDisplayed();
-    //await expect(elem).toBeEnabled();
-    //await expect(elem).toHaveText('USD 4,026.13');
-    //await expect(GoogleCalculatorPage.total).toHaveText('USD 4,026.13');
+    await GoogleCalculatorPage.getTotalCost();
+    await expect(GoogleCalculatorPage.total).toHaveText('USD 4,026.13');
   });
 });
